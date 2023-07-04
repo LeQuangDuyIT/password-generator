@@ -82,7 +82,7 @@
     background: rgb(246, 223, 74);
 }
 .fade-out {
-    animation: fadeOut 0.2s forwards;
+    animation: fadeOut 0.5s forwards;
 }
 
 @keyframes fadeOut {
