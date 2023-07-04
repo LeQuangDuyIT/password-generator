@@ -28,6 +28,7 @@ function App() {
             setNotiBoxes(prevNotiBoxes => [...prevNotiBoxes, { boxId: new Date().getTime(), content: 'succeeded' }]);
         } else {
             setNotiBoxes(prevNotiBoxes => [...prevNotiBoxes, { boxId: new Date().getTime(), content: 'error' }]);
+            setPassword('');
         }
     };
 

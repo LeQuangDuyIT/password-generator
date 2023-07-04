@@ -25,7 +25,7 @@ const NotificationBox = props => {
     return (
         showBox && (
             <div
-                className="notibox__wrap"
+                className={`notibox__wrap ${countDownTime <= 100 && 'fade-out'}`}
                 onMouseEnter={() => setRunTimeOut(false)}
                 onMouseLeave={() => setRunTimeOut(true)}
                 style={{ opacity: notiBoxes[notiBoxes.length - 1].boxId === boxId ? 1 : 0.3 }}
@@ -36,7 +36,7 @@ const NotificationBox = props => {
                     </div>
                 )}
                 <p>
-                    {content === 'succeeded' && 'Password created successfully!'}
+                    {content === 'succeeded' && `Password created successfully: ${password}`}
                     {content === 'error' && 'To generate password you must select at least one checkbox'}
                     {content === 'copied' && `Password copied: ${password}`}
                 </p>

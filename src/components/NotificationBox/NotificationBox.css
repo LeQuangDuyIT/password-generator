@@ -78,6 +78,18 @@
 .error {
     background: #e74c3c;
 }
-.copied{
+.copied {
     background: rgb(246, 223, 74);
+}
+.fade-out {
+    animation: fadeOut 0.2s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
 }
