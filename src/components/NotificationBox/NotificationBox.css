@@ -1,0 +1,83 @@
+.noti-space {
+    display: flex;
+    gap: 20px;
+
+    position: absolute;
+    top: 2.5%;
+    right: 50%;
+    transform: translateX(190px);
+    z-index: 1;
+}
+
+.notibox__wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    position: relative;
+
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+    padding: 30px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    background: white;
+
+    font-size: 18px;
+    text-align: left;
+
+    animation: slideInRight 0.5s forwards;
+}
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.error-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background: #e74c3c;
+    color: white;
+
+    text-align: center;
+}
+.error-icon i {
+    width: 30px;
+
+    line-height: 30px;
+}
+.notibox__wrap .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+
+    background: transparent;
+}
+.countdown-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    height: 6px;
+    border-radius: 0 0 0 10px;
+}
+.success {
+    background: linear-gradient(90deg, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+}
+.error {
+    background: #e74c3c;
+}
+.copied{
+    background: rgb(246, 223, 74);
+}
